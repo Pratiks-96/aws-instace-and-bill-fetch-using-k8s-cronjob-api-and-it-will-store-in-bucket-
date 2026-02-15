@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: aws-pdf-report
+spec:
+  schedule: "0 2 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: aws-report
+            image: pratik6958/aws_instace:latest
+
+            env:
+            - name: AWS_ACCESS_KEY_ID
+              value: "AKIA4VDBMJXRRLCPVKE3"
+
+            - name: AWS_SECRET_ACCESS_KEY
+              value: "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"
+
+            - name: AWS_DEFAULT_REGION
+              value: "us-east-1"
+
+            - name: S3_BUCKET
+              value: "ec2--files"
+
+          restartPolicy: Never
