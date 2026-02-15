@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: aws-pdf-report
 spec:
-  schedule: "0 2 * * *"
+  schedule: "*/2 * * * *"
   jobTemplate:
     spec:
       template:
