@@ -14,10 +14,10 @@ spec:
 
             env:
             - name: AWS_ACCESS_KEY_ID
-              value: "AKIA4VDBMJXRRLCPVKE3"
+              value: "your access key "
 
             - name: AWS_SECRET_ACCESS_KEY
-              value: "iHHaLExhitj8TKhzZyWEkDCqE7gR9/CfntnhuHz5"
+              value: "sercrete access key"
 
             - name: AWS_DEFAULT_REGION
               value: "us-east-1"
