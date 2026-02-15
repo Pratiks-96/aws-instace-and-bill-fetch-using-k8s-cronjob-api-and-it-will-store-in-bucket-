@@ -17,7 +17,7 @@ spec:
               value: "your access key "
 
             - name: AWS_SECRET_ACCESS_KEY
-              value: "sercrete access key"
+              value: "secret access key"
 
             - name: AWS_DEFAULT_REGION
               value: "us-east-1"
